@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'TTLakes';
+    src: url('fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: TTLakes, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 20px auto;
+}
+
+.title {
+    color: rgba(126, 126, 130, 1);
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 24px 0;
+    margin-top: 50px;
+}
+
+.card {
+    flex: 1 1 25%;
+    padding: 17px;
+    border: 1px solid rgba(234, 234, 234, 1);
+    border-radius: 10px;
+    margin: 0 32px 16px 0;
+    max-width: 240px;
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card__info {
+    padding: 14px 15.5px 14px 17px;
+    border: 2px solid rgba(255, 62, 121, 1);
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.expand {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.card__hidden {
+    display: none;
+}
+
+.title,
+.cards,
+.expand__img {
+    padding-left: 32px;
+}
+
+.swiper-pagination,
+.swiper-scrollbar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .card__hidden-768 {
+        display: none;
+    }
+    img {
+        max-width: 100px;
+    }
+    .card__info {
+        padding: 11px 12.5px 11px 14px;
+    }
+}
+
+@media (max-width: 668px) {
+    .card__info {
+        padding: 9px 10.5px 9px 12px;
+    }
+    .card {
+        margin: 0 20px 16px 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .expand {
+        display: none;
+    }
+
+    .cards {
+        justify-content: start;
+        flex-wrap: nowrap;
+    }
+
+    .swiper-pagination,
+    .swiper-scrollbar {
+        display: block;
+    }
+}
