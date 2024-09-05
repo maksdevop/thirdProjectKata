@@ -16,10 +16,10 @@ function swapBrands() {
 
     if (expandText.innerHTML === 'Показать все') {
         expandText.innerHTML = 'Скрыть';
-        expandImg.src = './images/expand-up.png';
+        expandImg.src = './images/expand-up.svg';
     } else {
         expandText.innerHTML = 'Показать все';
-        expandImg.src = './images/expand.png';
+        expandImg.src = './images/expand.svg';
     }
 }
 
@@ -33,6 +33,9 @@ const initSwiper = () => {
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
+        },
+        scrollbar: {
+            el: '.swiper-scrollbar',
         },
     });
 };
@@ -49,7 +52,7 @@ const handleResize = () => {
     const cards = document.querySelectorAll('.card');
 
     if (cardsContainer && cards.length > 0) {
-        if (window.innerWidth <= 320) {
+        if (window.innerWidth <= 767) {
             if (!swiper) {
                 cardsContainer.classList.add('swiper-wrapper');
                 cards.forEach((card) => {

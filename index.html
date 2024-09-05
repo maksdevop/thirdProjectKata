@@ -9,63 +9,85 @@
     </head>
     <body>
         <div class="container">
-            <div class="title">Ремонт техники различных брендов</div>
+            <h1 class="title">Ремонт техники различных брендов</h1>
             <main>
                 <div class="swiper">
-                    <div class="cards">
-                        <div class="card">
-                            <img src="./images/lenovo.png" alt="lenovo" class="card__title" />
-                            <img src="./images/dropdown.png" alt="dropdown" class="card__info" />
-                        </div>
-                        <div class="card">
-                            <img src="./images/sumsung.png" alt="sumsung" class="card__title" />
-                            <img src="./images/dropdown.png" alt="dropdown" class="card__info" />
-                        </div>
-                        <div class="card">
-                            <img src="./images/apple.png" alt="apple" class="card__title" />
-                            <img src="./images/dropdown.png" alt="dropdown" class="card__info" />
-                        </div>
-                        <div class="card">
-                            <img src="./images/viewSonic.png" alt="viewSonic" class="card__title" />
-                            <img src="./images/dropdown.png" alt="dropdown" class="card__info" />
-                        </div>
-                        <div class="card">
-                            <img src="./images/bosch.png" alt="bosch" class="card__title" />
-                            <img src="./images/dropdown.png" alt="dropdown" class="card__info" />
-                        </div>
-                        <div class="card">
-                            <img src="./images/hp.png" alt="hp" class="card__title" />
-                            <img src="./images/dropdown.png" alt="dropdown" class="card__info" />
-                        </div>
-                        <div class="card card__hidden-768 card__swap-768">
-                            <img src="./images/acer.png" alt="acer" class="card__title" />
-                            <img src="./images/dropdown.png" alt="dropdown" class="card__info" />
-                        </div>
-                        <div class="card card__hidden-768 card__swap-768">
-                            <img src="./images/sony.png" alt="sony" class="card__title" />
-                            <img src="./images/dropdown.png" alt="dropdown" class="card__info" />
-                        </div>
-                        <div class="card card__hidden card__swap">
-                            <img src="./images/lenovo.png" alt="lenovo" class="card__title" />
-                            <img src="./images/dropdown.png" alt="dropdown" class="card__info" />
-                        </div>
-                        <div class="card card__hidden card__swap">
-                            <img src="./images/sumsung.png" alt="sumsung" class="card__title" />
-                            <img src="./images/dropdown.png" alt="dropdown" class="card__info" />
-                        </div>
-                        <div class="card card__hidden card__swap">
-                            <img src="./images/apple.png" alt="apple" class="card__title" />
-                            <img src="./images/dropdown.png" alt="dropdown" class="card__info" />
-                        </div>
-                    </div>
+                    <ul class="cards">
+                        <li class="card">
+                            <img src="./images/lenovo.svg" alt="lenovo" class="card__title" />
+                            <button>
+                                <img src="./images/dropdown.svg" alt="dropdown" class="card__info" />
+                            </button>
+                        </li>
+                        <li class="card">
+                            <img src="./images/sumsung.svg" alt="sumsung" class="card__title" />
+                            <button>
+                                <img src="./images/dropdown.svg" alt="dropdown" class="card__info" />
+                            </button>
+                        </li>
+                        <li class="card">
+                            <img src="./images/apple.svg" alt="apple" class="card__title" />
+                            <button>
+                                <img src="./images/dropdown.svg" alt="dropdown" class="card__info" />
+                            </button>
+                        </li>
+                        <li class="card">
+                            <img src="./images/viewSonic.svg" alt="viewSonic" class="card__title" />
+                            <button>
+                                <img src="./images/dropdown.svg" alt="dropdown" class="card__info" />
+                            </button>
+                        </li>
+                        <li class="card">
+                            <img src="./images/bosch.svg" alt="bosch" class="card__title" />
+                            <button>
+                                <img src="./images/dropdown.svg" alt="dropdown" class="card__info" />
+                            </button>
+                        </li>
+                        <li class="card">
+                            <img src="./images/hp.svg" alt="hp" class="card__title" />
+                            <button>
+                                <img src="./images/dropdown.svg" alt="dropdown" class="card__info" />
+                            </button>
+                        </li>
+                        <li class="card card__hidden-768 card__swap-768">
+                            <img src="./images/acer.svg" alt="acer" class="card__title" />
+                            <button>
+                                <img src="./images/dropdown.svg" alt="dropdown" class="card__info" />
+                            </button>
+                        </li>
+                        <li class="card card__hidden-768 card__swap-768">
+                            <img src="./images/sony.svg" alt="sony" class="card__title" />
+                            <button>
+                                <img src="./images/dropdown.svg" alt="dropdown" class="card__info" />
+                            </button>
+                        </li>
+                        <li class="card card__hidden card__swap">
+                            <img src="./images/lenovo.svg" alt="lenovo" class="card__title" />
+                            <button>
+                                <img src="./images/dropdown.svg" alt="dropdown" class="card__info" />
+                            </button>
+                        </li>
+                        <li class="card card__hidden card__swap">
+                            <img src="./images/sumsung.svg" alt="sumsung" class="card__title" />
+                            <button>
+                                <img src="./images/dropdown.svg" alt="dropdown" class="card__info" />
+                            </button>
+                        </li>
+                        <li class="card card__hidden card__swap">
+                            <img src="./images/apple.svg" alt="apple" class="card__title" />
+                            <button>
+                                <img src="./images/dropdown.svg" alt="dropdown" class="card__info" />
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-scrollbar"></div>
             </main>
             <div class="expand">
-                <img src="./images/expand.png" alt="expand" class="expand__img" />
-                <div class="expand__text">Показать все</div>
+                <button>
+                    <img src="./images/expand.svg" alt="expand" class="expand__img" />
+                </button>
+                <button class="expand__text">Показать все</button>
             </div>
         </div>
     </body>
