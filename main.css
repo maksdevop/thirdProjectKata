@@ -50,11 +50,11 @@ body {
     height: 72px !important;
 }
 
-.card img {
+.card__title {
     max-width: 110px;
 }
 
-.card button {
+.card__btn {
     border: none;
     background-color: inherit;
     cursor: pointer;
@@ -81,7 +81,7 @@ body {
     margin-left: 8px;
 }
 
-.expand button {
+.expand__btn {
     border: none;
     background-color: inherit;
     cursor: pointer;
