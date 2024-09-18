@@ -13,22 +13,24 @@
 
 .swiper-slide {
     display: flex !important;
+    /* width: 120px; */
 }
 
 body {
     font-family: TTLakes, sans-serif;
-    background-color: rgb(247, 247, 247);
 }
 
 .container {
     max-width: 1120px;
-    margin: 0 auto;
+    margin: 20px auto;
+    background-color: rgba(248, 248, 248, 1);
 }
 
 .title {
+    border-top: 1px solid rgba(217, 255, 245, 1);
+    background: linear-gradient(to right, rgba(248, 248, 248, 1), rgba(255, 255, 255, 1));
     color: rgba(126, 126, 130, 1);
     text-transform: uppercase;
-    background-color: white;
     padding: 20px 0 20px 20px;
     font-size: 16px;
 }
@@ -66,6 +68,13 @@ body {
     border-radius: 50%;
     margin: 0 10px;
     cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+.card__btn:hover .card__info {
+    border-color: rgba(229, 46, 113, 1);
+    background-color: rgba(255, 62, 121, 0.1);
+    transform: scale(1.1);
 }
 
 .card__hidden {
@@ -74,11 +83,16 @@ body {
 
 .expand {
     display: none;
-    padding-left: 20px;
+    padding: 0 0 35px 20px;
 }
 
 .expand__text {
+    transition: all 1s ease-in-out;
     margin-left: 8px;
+}
+
+.expand__text:hover {
+    color: rgb(255, 51, 51);
 }
 
 .expand__btn {
@@ -113,4 +127,14 @@ body {
         min-width: 220px;
         flex: 0 0 20%;
     }
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fff;
 }
